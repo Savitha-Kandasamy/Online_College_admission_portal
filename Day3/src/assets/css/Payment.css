@@ -1,0 +1,133 @@
+.ppayment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-size: cover;
+  }
+  
+  .ppayment-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 0.375rem;
+    padding: 2rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.095);
+  }
+  
+  .pcard-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .pcard-logo {
+    width: 48px;
+    height: 48px;
+    margin-right: 1rem;
+  }
+  
+  .pcard-info {
+    flex-grow: 1;
+  }
+  
+  .pcard-number {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .premove-card {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .premove-card:hover {
+    text-decoration: underline;
+  }
+  
+
+.pform-control {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .pform-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+.pform-control.col-7{
+    width:100%;
+}
+  .pform-control.col-3 {
+    flex:1;
+    max-width:40%;
+    
+}
+
+.pform-control.col-2 {
+    max-width: 500%;
+    margin-left: 17px;
+}
+@media (min-width: 576px) {
+    .pform-control.col-3,
+    .pform-control.col-2 {
+      width: 48%;
+      margin-right: 4%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .pform-control.col-3,
+    .pform-control.col-2 {
+      width: 48%;
+      margin-right: 4%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .pform-control.col-3,
+    .pform-control.col-2 {
+      width: 48%;
+      margin-right: 4%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .pform-control.col-3,
+    .pform-control.col-2 {
+      width: 48%;
+      margin-right: 4%;
+    }
+  }
+  
+  .penroll-button {
+    margin: 5px;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    background-color: #f83e60;
+    transition: background-color 0.3s ease;
+  }
+  
+  .penroll-button:hover {
+    background-color: #7d7c7bfc;
+  }
+ 
+  
+  
