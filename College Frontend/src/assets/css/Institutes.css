@@ -1,0 +1,165 @@
+.ibody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  padding: 30px;
+}
+  
+  .ibody::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 1px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+  .ibody input {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 2px solid #7b7b7d;
+    border-radius: 50px;
+    font-size: 20px;
+    outline: none; /* Remove input focus border */
+  }
+  
+  .iul {
+    list-style-type: none;
+    padding: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .college-card {
+    display: flex;
+    border: 1px solid #7b7b7d;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    max-width: 600px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    height: 90%; /* Adjusted to cover the full height */
+  }
+  
+  .college-card .card-content {
+    flex: 2; /* Takes up the remaining width */
+  }
+  
+  .college-card img {
+    border-radius: 8px; /* Removed right side border-radius */
+    width: 150px;
+    height: 90%; /* Adjusted to cover the full height */
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+    
+  .ddark-overlay {
+    border: 1px solid #7b7b7d;
+    margin-left: 5px;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 70vw;
+    max-width: 300px;
+    position: relative;
+    opacity:0.4;
+    transition: transform 0.3s ease-in-out; /* Add smooth transition */
+  }
+  
+  .college-card:hover {
+    transform: scale(1.05); /* Add hover effect */
+  }
+  
+  .college-card h3 {
+    padding-left: 15px;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .college-card p {
+    padding-left: 15px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .college-card .separator {
+    border-bottom: 1px solid #7b7b7d;
+    margin-bottom: 10px;
+    padding: 1px;
+  }
+  
+  .college-card .row {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding-left: 15px;
+  }
+  
+  .college-card .row .topic {
+    font-weight: bold;
+    
+
+  }
+  
+  .college-card .row .content {
+    color: #555;
+  }
+  
+  .inline {
+    display: inline;
+  } 
+    
+  .ienroll-button {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    background-color: #f83e60;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ienroll-button:hover {
+    background-color: #7d7c7bfc;
+  }
+  
+  
+ 
+  .college-card .college-details .row,
+.college-card .contact-details .row {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.college-card .college-details .topic,
+.college-card .contact-details .topic {
+  font-weight: bold;
+}
+
+.college-card .college-details .content,
+.college-card .contact-details .content {
+  color: #555;
+}
+
+.college-card .college-details,
+.college-card .contact-details {
+  flex-basis: 48%; /* Adjust as needed based on your design */
+}
